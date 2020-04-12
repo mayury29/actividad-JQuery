@@ -1,0 +1,159 @@
+
+
+
+
+
+.contenedor-preguntas{
+max-width: 700px;
+min-height: 450px;
+background-color: aliceblue;
+border-radius: 54px 54px 54px 54px;
+padding: 30px;
+justify-content: center;
+align-items: center; 
+justify-content: center;
+align-items: center; 
+margin-top:10px;
+margin-left:22%;
+margin-right: 50px;
+border:1px #000000 solid;
+}
+
+
+
+
+.numero-pregunta h3{
+    color: #009688;
+border-bottom: 1px solid;
+margin: 0;
+padding-bottom: 10px;
+}
+.preguntas{
+font-size: 22px;
+color: #000000;
+padding-bottom: 15px 0;
+
+}
+
+
+
+.opciones div{
+background-color: #cccccc;
+font-size: 16px;
+color: #000000;
+border-radius:5px ;
+margin-bottom: 10px;
+padding-bottom:   15px;
+padding: 10px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+}
+.opciones div.desactivado{
+    pointer-events: none;
+}
+.opciones div.correcto{
+z-index: 0;
+color: #cccccc;
+}
+
+.opciones div.correcto::before{
+    content: '';
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    z-index: -3;
+
+    animation: animateBackground 0.4s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animateBackground{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+.opciones div.incorrecto{
+    z-index: 0;
+    color: #cccccc;
+    }
+    
+    .opciones div.incorrecto::before{
+        content: '';
+        position:absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        z-index: -3;
+    
+        animation: animateBackground 0.4s ease;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes animateBackground{
+        0%{
+            transform: translateX(-100%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    
+    
+.button .btn{
+padding: 10px 30px;
+background-color: #009688;
+cursor: pointer;
+border-radius: 10px;
+font-size: 18px;
+color: #ffffff;
+display: inline-block;
+margin:15px 0;
+
+}
+
+.rastreador-respuesta{
+  border-top: 1px solid #cccccc;  
+  padding-top: 15px;
+ 
+}
+
+
+.rastreador-respuesta div{
+height: 40px;
+width: 40px;
+background-color: #cccccc;
+display: inline-block;
+border-radius: 50%;
+margin-right: 5px;
+margin: 0 5px;
+}
+
+.rastreador-respuesta div.correcto{
+background-color: green;
+background-image: url('../img/correct.png');
+background-position: center;
+background-repeat:no-repeat ;
+background-size: 50%;
+
+}
+
+.rastreador-respuesta div.incorrecto{
+    background-color: red;
+    background-image: url('../img/wrong.png');
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: 50%;
+}
+    
+

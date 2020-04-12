@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Que tanto conoces a colombia?</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="css/preguntas.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Test de cultura Colombiana </h1>
+
+    </header>
+
+
+    <div id="ventana">
+
+        <h2>Llenar Los Siguientes Campos</h2>
+        <form action="" method="post">
+
+
+            <input type="text" id="nombre" size="30" value="" class="diseño" placeholder="Ingrese Su Nombre" required />
+            <br>
+            <br>
+            <p></p>
+
+            <input type="text" id="apellido" size="30" value="" class="diseño" placeholder="Ingrese Su Apellido" required />
+
+
+
+            <input type="button" value="Guardar" onclick="guardar()" id="boton" />
+
+        </form>
+
+    </div>
+
+    <div id="contenidos">
+        <h1 id="nombresyapellidos"></h1>
+
+    </div>
+
+    <div class="contenedor-preguntas">
+        <div class="numero-pregunta">
+
+            <h3>Pregunta numero <span class="numero-value"> </span> de <span class="total-preguntas"> </span> </h3>
+        </div>
+        <br>
+        <div class="preguntas"> </div>
+        <br>
+        <div class=" opciones">
+            <div id="0" class="opcion1" onclick="check(this)"> </div>
+            <div id="1" class="opcion2" onclick="check(this)"> </div>
+            <div id="2" class="opcion3" onclick="check(this)"> </div>
+            <div id="3" class="opcion4" onclick="check(this)"> </div>
+
+
+
+        </div>
+
+        <div class="button">
+            <button type="button" class="btn" onclick="siguiente()">Siguiente</button>
+        </div>
+
+
+        <div class="rastreador-respuesta">
+
+
+        </div>
+    </div>   
+<br>
+
+
+<footer>
+    <p>Desarrollado por los estudiante: Cesar Barrios Salgado - Mayury Moreno Reino</p>
+</footer>
+
+
+    <script src="jquery-ui-1.12.1/jquery.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/preguntas.js"></script>
+    <script src="js/Validar.js"></script>
+</body>
+
+</html>
